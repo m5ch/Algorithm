@@ -9,7 +9,15 @@ package sorted.select_sort;
 public class Select {
     //1.
     public static void sort(Comparable[] arr){
-
+        for (int i = 1; i < arr.length - 1; i++) {
+            int minindex = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (greater(arr[i], arr[j])){
+                    minindex = j;
+                }
+            }
+            exch(arr, i, minindex);
+        }
     }
     //2.比较
     private static boolean greater(Comparable x, Comparable y){

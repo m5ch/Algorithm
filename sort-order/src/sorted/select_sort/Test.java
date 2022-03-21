@@ -1,10 +1,14 @@
 package sorted.select_sort;
 
+import sorted.bubble_sort.demo2.Sort;
+
+import java.util.Arrays;
+
 /**
- * @Classname Test
- * @Description 选择排序
- * @Date 2022/3/19 21:14
- * @Created by 落尘
+ * @ Classname Test
+ * @ Description 选择排序
+ * @ Date 2022/3/19 21:14
+ * @ Created by 落尘
  */
 
 public class Test {
@@ -15,6 +19,8 @@ public class Test {
 
      */
     public static void main(String[] args) {
-
+        Integer[] arr = {5,2,6,9,68,90};
+        Select.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
